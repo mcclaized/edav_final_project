@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/d3-flame-graph/src/d3.flameGraph.css">
+
+    <style>
+
+    /* Space out content a bit */
+    body {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    /* Custom page header */
+    .header {
+      padding-bottom: 20px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    /* Make the masthead heading the same height as the navigation */
+    .header h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 40px;
+    }
+
+    /* Customize container */
+    .container {
+      max-width: 990px;
+    }
+
+    .flamecharts {
+      /*display:inline-block;*/
+      display: flex;
+      width: 90%;
+      height: 580px;
+      margin: auto;
+      padding: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .flamechart {
+      margin: 10px;
+    }
+
+    .details{
+      margin-top: auto;
+    }
+
+
+    </style>
+
+    <title>d3-flame-graph</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <div class="pull-right">
+            <form class="form-inline" id="form">
+              <a class="btn" href="javascript: resetZoom();">Reset zoom</a>
+              <a class="btn" href="javascript: clear();">Clear</a>
+              <div class="form-group">
+                <input type="text" class="form-control" id="term">
+              </div>
+              <a class="btn btn-primary" href="javascript: search();">Search</a>
+            </form>
+          </div>
+        </nav>
+        <h3 class="text-muted">d3-flame-graph</h3>
+      </div>
+    </div>
+    <div class="flamecharts">
+      <div class="flamechart" id="chart-baseline">
+      </div>
+      <div class="flamechart" id="chart-improved">
+      </div>
+      <div class="flamechart" id="chart-diff">
+      </div>
+    </div>
+    <hr>
+    <div id="details">
+    </div>
+
+
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script type="text/javascript" src="bower_components/lodash/lodash.js"></script>
+    <script type="text/javascript" src="bower_components/d3-flame-graph/src/d3.flameGraph.js"></script>
+
+    <script type="text/javascript">
+    var flameGraph1 = d3.flameGraph()
+      .height(540)
+      .width(800)
+      .cellHeight(18)
+      .transitionDuration(750)
+      .transitionEase('cubic-in-out')
+      .sort(true)
+      //Example to sort in reverse order
+      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
+      .title("Baseline Profile (blue means fewer calls after the change)")
+      .onClick(onClick);
+
+    var flameGraph2 = d3.flameGraph()
+      .height(540)
+      .width(800)
+      .cellHeight(18)
+      .transitionDuration(750)
+      .transitionEase('cubic-in-out')
+      .sort(true)
+      //Example to sort in reverse order
+      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
+      .title("New Profile (blue means fewer calls after the change)")
+      .onClick(onClick);
+
+    var flameGraph3 = d3.flameGraph()
+      .height(540)
+      .width(1200)
+      .cellHeight(18)
+      .transitionDuration(750)
+      .transitionEase('cubic-in-out')
+      .sort(true)
+      //Example to sort in reverse order
+      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
+      .title("Profile Delta (blue means reduction in time spent)")
+      .onClick(onClick);
+
+
+    // Example on how to use custom tooltips using d3-tip.
+    //var tip = d3.tip()
+    //  .direction("s")
+    //  .offset([8, 0])
+    //  .attr('class', 'd3-flame-graph-tip')
+    //  .html(function(d) { return "name: " + d.name + ", value: " + d.value; });
+
+    //flameGraph.tooltip(tip);
+
+    // Example on how to use custom labels
+    // var label = function(d) {
+    //  return "name: " + d.name + ", value: " + d.value;
+    // }
+
+    // flameGraph.label(label);
+    var labelFormat = function(d) {
+      //return d.name + " (" + d3.round(100 * d.dx, 3) + "%, " + d.value + " samples)";
+      return d.name + " (" + d3.round(100 * d.dx, 3) + "%, " + d.value + " samples, " + d.tottime + " time)";
+    };
+
+    flameGraph1.label(labelFormat);
+    flameGraph2.label(labelFormat);
+    flameGraph3.label(labelFormat);
+
+    var redRange = d3.scale.ordinal().range(['#fff7ec','#fee8c8','#fdd49e','#fdbb84','#fc8d59','#ef6548','#d7301f','#b30000','#7f0000']);
+    var blueRange = d3.scale.ordinal().range(['#fff7fb','#ece7f2','#d0d1e6','#a6bddb','#74a9cf','#3690c0','#0570b0','#045a8d','#023858'].reverse())
+
+    flameGraph1.color(function(d) {return d.diff > 0 ? redRange(d.diff) : blueRange(d.diff);});
+    flameGraph2.color(function(d) {return d.diff > 0 ? redRange(d.diff) : blueRange(d.diff);});
+    flameGraph3.color(function(d) {return d.tottime > 0 ? redRange(d.tottime) : blueRange(d.tottime);});
+
+    d3.json("data/baseline_diff.json", function(error, data) {
+      if (error) return console.warn(error);
+      d3.select("#chart-baseline")
+          .datum(data)
+          .call(flameGraph1);
+    });
+
+    d3.json("data/improved_diff.json", function(error, data) {
+      if (error) return console.warn(error);
+      d3.select("#chart-improved")
+          .datum(data)
+          .call(flameGraph2);
+    });
+
+    d3.json("data/delta_diff.json", function(error, data) {
+      if (error) return console.warn(error);
+      d3.select("#chart-diff")
+          .datum(data)
+          .call(flameGraph3);
+    });
+
+    document.getElementById("form").addEventListener("submit", function(event){
+      event.preventDefault();
+      search();
+    });
+
+    function search() {
+      var term = document.getElementById("term").value;
+      flameGraph1.search(term);
+      flameGraph2.search(term);
+      flameGraph3.search(term);
+    }
+
+    function clear() {
+      document.getElementById('term').value = '';
+      flameGraph1.clear();
+      flameGraph2.clear();
+      flameGraph3.clear();
+    }
+
+    function resetZoom() {
+      flameGraph1.resetZoom();
+      flameGraph2.resetZoom();
+      flameGraph3.resetZoom();
+    }
+
+    function onClick(d) {
+      console.info("Clicked on " + d.name);
+    }
+    </script>
+  </body>
+</html>

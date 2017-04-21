@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export TIMEFORMAT=%R
+
+TIME=$( { time "$@"; } 2>&1 )
+
+printf "REALTIME: $TIME\n"
+
+pyflame -x -r 0.0001 -t "$@"

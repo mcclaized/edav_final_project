@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "homepage": "https://github.com/mcclaized/edav_final_project",
+  "authors": [
+    "Steve McClain <sdmcclain@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3-flame-graph": "^0.4.3"
+  }
+}

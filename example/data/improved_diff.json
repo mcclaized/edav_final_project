@@ -1,0 +1,1115 @@
+{
+  "name": "root",
+  "value": 59,
+  "diff": -6,
+  "timeshare": 59,
+  "tottime": 0.101,
+  "children": [
+    {
+      "name": "/usr/lib/python2.7/site.py:<module>:68",
+      "value": 29,
+      "diff": -11,
+      "timeshare": 29,
+      "tottime": 0.049644067796610174,
+      "children": [
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:400",
+          "value": 15,
+          "diff": 7,
+          "timeshare": 15,
+          "tottime": 0.025677966101694916,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/UserDict.py:<module>:117",
+              "value": 1,
+              "diff": 1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/abc.py:register:109",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__subclasscheck__:184",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/usr/lib/python2.7/UserDict.py:<module>:116",
+              "value": 13,
+              "diff": 7,
+              "timeshare": 13,
+              "tottime": 0.022254237288135595,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:11",
+                  "value": 3,
+                  "diff": 1,
+                  "timeshare": 3,
+                  "tottime": 0.005135593220338984,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:<module>:8",
+                      "value": 2,
+                      "diff": 1,
+                      "timeshare": 2,
+                      "tottime": 0.0034237288135593224,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:<module>:10",
+                          "value": 1,
+                          "diff": 0,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        },
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:<module>:35",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:636",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:register:109",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/abc.py:__subclasscheck__:156",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612,
+                          "children": [
+                            {
+                              "name": "/usr/lib/python2.7/_weakrefset.py:__init__:49",
+                              "value": 1,
+                              "diff": 1,
+                              "timeshare": 1,
+                              "tottime": 0.0017118644067796612
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:590",
+                  "value": 1,
+                  "diff": 0,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:101",
+                      "value": 1,
+                      "diff": 0,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:__init__:37",
+                          "value": 1,
+                          "diff": 0,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:139",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:87",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:32",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:100",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:__init__:45",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:282",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:99",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:__init__:38",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:493",
+                  "value": 1,
+                  "diff": 0,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:87",
+                      "value": 1,
+                      "diff": 0,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:443",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/_abcoll.py:KeysView:445",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:73",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:93",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/_abcoll.py:<module>:458",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/abc.py:__new__:99",
+                      "value": 1,
+                      "diff": 1,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/_weakrefset.py:__init__:47",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:49",
+          "value": 8,
+          "diff": -6,
+          "timeshare": 8,
+          "tottime": 0.01369491525423729,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/posixpath.py:<module>:15",
+              "value": 2,
+              "diff": -3,
+              "timeshare": 2,
+              "tottime": 0.0034237288135593224
+            },
+            {
+              "name": "/usr/lib/python2.7/posixpath.py:<module>:17",
+              "value": 5,
+              "diff": -4,
+              "timeshare": 5,
+              "tottime": 0.008559322033898305,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/warnings.py:<module>:323",
+                  "value": 2,
+                  "diff": -3,
+                  "timeshare": 2,
+                  "tottime": 0.0034237288135593224
+                },
+                {
+                  "name": "/usr/lib/python2.7/warnings.py:<module>:8",
+                  "value": 1,
+                  "diff": 0,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612
+                },
+                {
+                  "name": "/usr/lib/python2.7/warnings.py:<module>:120",
+                  "value": 1,
+                  "diff": 1,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:26",
+          "value": 1,
+          "diff": -1,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612
+        },
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:44",
+          "value": 2,
+          "diff": -5,
+          "timeshare": 2,
+          "tottime": 0.0034237288135593224
+        },
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:717",
+          "value": 1,
+          "diff": 0,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612
+        },
+        {
+          "name": "/usr/lib/python2.7/os.py:<module>:52",
+          "value": 1,
+          "diff": -1,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/os.py:_get_exports_list:39",
+              "value": 1,
+              "diff": -1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/usr/lib/python2.7/site.py:<module>:563",
+      "value": 21,
+      "diff": 3,
+      "timeshare": 21,
+      "tottime": 0.03594915254237289,
+      "children": [
+        {
+          "name": "/usr/lib/python2.7/site.py:main:554",
+          "value": 1,
+          "diff": 0,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/site.py:execsitecustomize:513",
+              "value": 1,
+              "diff": 0,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/sitecustomize.py:<module>:3",
+                  "value": 1,
+                  "diff": 0,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/site.py:main:545",
+          "value": 17,
+          "diff": 2,
+          "timeshare": 17,
+          "tottime": 0.02910169491525424,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/site.py:addusersitepackages:272",
+              "value": 16,
+              "diff": 1,
+              "timeshare": 16,
+              "tottime": 0.02738983050847458,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/site.py:getusersitepackages:247",
+                  "value": 14,
+                  "diff": 0,
+                  "timeshare": 14,
+                  "tottime": 0.023966101694915257,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/site.py:getuserbase:237",
+                      "value": 11,
+                      "diff": 0,
+                      "timeshare": 11,
+                      "tottime": 0.018830508474576273,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/sysconfig.py:get_config_var:582",
+                          "value": 11,
+                          "diff": 0,
+                          "timeshare": 11,
+                          "tottime": 0.018830508474576273,
+                          "children": [
+                            {
+                              "name": "/usr/lib/python2.7/sysconfig.py:get_config_vars:509",
+                              "value": 8,
+                              "diff": 0,
+                              "timeshare": 8,
+                              "tottime": 0.01369491525423729,
+                              "children": [
+                                {
+                                  "name": "/usr/lib/python2.7/re.py:<module>:105",
+                                  "value": 6,
+                                  "diff": -1,
+                                  "timeshare": 6,
+                                  "tottime": 0.010271186440677968,
+                                  "children": [
+                                    {
+                                      "name": "/usr/lib/python2.7/sre_compile.py:<module>:15",
+                                      "value": 4,
+                                      "diff": -3,
+                                      "timeshare": 4,
+                                      "tottime": 0.006847457627118645,
+                                      "children": [
+                                        {
+                                          "name": "/usr/lib/python2.7/sre_parse.py:<module>:22",
+                                          "value": 1,
+                                          "diff": 1,
+                                          "timeshare": 1,
+                                          "tottime": 0.0017118644067796612
+                                        },
+                                        {
+                                          "name": "/usr/lib/python2.7/sre_parse.py:<module>:706",
+                                          "value": 1,
+                                          "diff": -2,
+                                          "timeshare": 1,
+                                          "tottime": 0.0017118644067796612
+                                        },
+                                        {
+                                          "name": "/usr/lib/python2.7/sre_parse.py:<module>:17",
+                                          "value": 1,
+                                          "diff": -1,
+                                          "timeshare": 1,
+                                          "tottime": 0.0017118644067796612
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "/usr/lib/python2.7/sre_compile.py:<module>:14",
+                                      "value": 1,
+                                      "diff": 1,
+                                      "timeshare": 1,
+                                      "tottime": 0.0017118644067796612
+                                    },
+                                    {
+                                      "name": "/usr/lib/python2.7/sre_compile.py:<module>:62",
+                                      "value": 1,
+                                      "diff": 1,
+                                      "timeshare": 1,
+                                      "tottime": 0.0017118644067796612,
+                                      "children": [
+                                        {
+                                          "name": "/usr/lib/python2.7/sre_compile.py:<dictcomp>:62",
+                                          "value": 1,
+                                          "diff": 1,
+                                          "timeshare": 1,
+                                          "tottime": 0.0017118644067796612,
+                                          "children": [
+                                            {
+                                              "name": "/usr/lib/python2.7/sre_compile.py:<genexpr>:61",
+                                              "value": 1,
+                                              "diff": 1,
+                                              "timeshare": 1,
+                                              "tottime": 0.0017118644067796612
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "/usr/lib/python2.7/re.py:<module>:226",
+                                  "value": 1,
+                                  "diff": 1,
+                                  "timeshare": 1,
+                                  "tottime": 0.0017118644067796612,
+                                  "children": [
+                                    {
+                                      "name": "/usr/lib/python2.7/sre_compile.py:compile:572",
+                                      "value": 1,
+                                      "diff": 1,
+                                      "timeshare": 1,
+                                      "tottime": 0.0017118644067796612,
+                                      "children": [
+                                        {
+                                          "name": "/usr/lib/python2.7/sre_parse.py:parse:712",
+                                          "value": 1,
+                                          "diff": 1,
+                                          "timeshare": 1,
+                                          "tottime": 0.0017118644067796612
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "/usr/lib/python2.7/sysconfig.py:get_config_vars:528",
+                              "value": 3,
+                              "diff": 0,
+                              "timeshare": 3,
+                              "tottime": 0.005135593220338984,
+                              "children": [
+                                {
+                                  "name": "/usr/lib/python2.7/sysconfig.py:_init_posix:412",
+                                  "value": 3,
+                                  "diff": 0,
+                                  "timeshare": 3,
+                                  "tottime": 0.005135593220338984,
+                                  "children": [
+                                    {
+                                      "name": "/usr/lib/python2.7/_sysconfigdata.py:<module>:6",
+                                      "value": 3,
+                                      "diff": 0,
+                                      "timeshare": 3,
+                                      "tottime": 0.005135593220338984
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "/usr/lib/python2.7/site.py:getuserbase:236",
+                      "value": 3,
+                      "diff": 0,
+                      "timeshare": 3,
+                      "tottime": 0.005135593220338984,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/sysconfig.py:<module>:213",
+                          "value": 1,
+                          "diff": 1,
+                          "timeshare": 1,
+                          "tottime": 0.0017118644067796612
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "/usr/lib/python2.7/site.py:getusersitepackages:261",
+                  "value": 2,
+                  "diff": 1,
+                  "timeshare": 2,
+                  "tottime": 0.0034237288135593224,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/sysconfig.py:get_path:497",
+                      "value": 2,
+                      "diff": 1,
+                      "timeshare": 2,
+                      "tottime": 0.0034237288135593224,
+                      "children": [
+                        {
+                          "name": "/usr/lib/python2.7/sysconfig.py:get_paths:488",
+                          "value": 2,
+                          "diff": 1,
+                          "timeshare": 2,
+                          "tottime": 0.0034237288135593224,
+                          "children": [
+                            {
+                              "name": "/usr/lib/python2.7/sysconfig.py:_expand_vars:181",
+                              "value": 1,
+                              "diff": 1,
+                              "timeshare": 1,
+                              "tottime": 0.0017118644067796612,
+                              "children": [
+                                {
+                                  "name": "/usr/lib/python2.7/posixpath.py:normpath:342",
+                                  "value": 1,
+                                  "diff": 1,
+                                  "timeshare": 1,
+                                  "tottime": 0.0017118644067796612
+                                }
+                              ]
+                            },
+                            {
+                              "name": "/usr/lib/python2.7/sysconfig.py:_expand_vars:176",
+                              "value": 1,
+                              "diff": 0,
+                              "timeshare": 1,
+                              "tottime": 0.0017118644067796612,
+                              "children": [
+                                {
+                                  "name": "/usr/lib/python2.7/sysconfig.py:_extend_dict:167",
+                                  "value": 1,
+                                  "diff": 0,
+                                  "timeshare": 1,
+                                  "tottime": 0.0017118644067796612
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/usr/lib/python2.7/site.py:addusersitepackages:279",
+              "value": 1,
+              "diff": 1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/site.py:main:541",
+          "value": 1,
+          "diff": 0,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/site.py:abs__file__:100",
+              "value": 1,
+              "diff": 0,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612,
+              "children": [
+                {
+                  "name": "/usr/lib/python2.7/posixpath.py:abspath:366",
+                  "value": 1,
+                  "diff": 0,
+                  "timeshare": 1,
+                  "tottime": 0.0017118644067796612,
+                  "children": [
+                    {
+                      "name": "/usr/lib/python2.7/posixpath.py:normpath:348",
+                      "value": 1,
+                      "diff": 0,
+                      "timeshare": 1,
+                      "tottime": 0.0017118644067796612
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/site.py:main:549",
+          "value": 1,
+          "diff": 1,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/site.py:setquit:363",
+              "value": 1,
+              "diff": 1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        },
+        {
+          "name": "/usr/lib/python2.7/site.py:main:556",
+          "value": 1,
+          "diff": 0,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/site.py:execusercustomize:527",
+              "value": 1,
+              "diff": 0,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/usr/lib/python2.7/encodings/__init__.py:<module>:31",
+      "value": 3,
+      "diff": -1,
+      "timeshare": 3,
+      "tottime": 0.005135593220338984,
+      "children": [
+        {
+          "name": "/usr/lib/python2.7/codecs.py:<module>:214",
+          "value": 1,
+          "diff": 1,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/codecs.py:BufferedIncrementalEncoder:219",
+              "value": 1,
+              "diff": 1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/usr/lib/python2.7/encodings/__init__.py:<module>:32",
+      "value": 2,
+      "diff": 0,
+      "timeshare": 2,
+      "tottime": 0.0034237288135593224
+    },
+    {
+      "name": "fibonacci_improved.py:<module>:40",
+      "value": 2,
+      "diff": 2,
+      "timeshare": 2,
+      "tottime": 0.0034237288135593224,
+      "children": [
+        {
+          "name": "fibonacci_improved.py:fib_seq:31",
+          "value": 2,
+          "diff": 2,
+          "timeshare": 2,
+          "tottime": 0.0034237288135593224,
+          "children": [
+            {
+              "name": "fibonacci_improved.py:fib_seq:31",
+              "value": 2,
+              "diff": 2,
+              "timeshare": 2,
+              "tottime": 0.0034237288135593224,
+              "children": [
+                {
+                  "name": "fibonacci_improved.py:fib_seq:31",
+                  "value": 2,
+                  "diff": 2,
+                  "timeshare": 2,
+                  "tottime": 0.0034237288135593224,
+                  "children": [
+                    {
+                      "name": "fibonacci_improved.py:fib_seq:31",
+                      "value": 2,
+                      "diff": 2,
+                      "timeshare": 2,
+                      "tottime": 0.0034237288135593224,
+                      "children": [
+                        {
+                          "name": "fibonacci_improved.py:fib_seq:31",
+                          "value": 2,
+                          "diff": 2,
+                          "timeshare": 2,
+                          "tottime": 0.0034237288135593224,
+                          "children": [
+                            {
+                              "name": "fibonacci_improved.py:fib_seq:31",
+                              "value": 2,
+                              "diff": 2,
+                              "timeshare": 2,
+                              "tottime": 0.0034237288135593224,
+                              "children": [
+                                {
+                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                  "value": 2,
+                                  "diff": 2,
+                                  "timeshare": 2,
+                                  "tottime": 0.0034237288135593224,
+                                  "children": [
+                                    {
+                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                      "value": 2,
+                                      "diff": 2,
+                                      "timeshare": 2,
+                                      "tottime": 0.0034237288135593224,
+                                      "children": [
+                                        {
+                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                          "value": 2,
+                                          "diff": 2,
+                                          "timeshare": 2,
+                                          "tottime": 0.0034237288135593224,
+                                          "children": [
+                                            {
+                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                              "value": 2,
+                                              "diff": 2,
+                                              "timeshare": 2,
+                                              "tottime": 0.0034237288135593224,
+                                              "children": [
+                                                {
+                                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                                  "value": 2,
+                                                  "diff": 2,
+                                                  "timeshare": 2,
+                                                  "tottime": 0.0034237288135593224,
+                                                  "children": [
+                                                    {
+                                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                                      "value": 2,
+                                                      "diff": 2,
+                                                      "timeshare": 2,
+                                                      "tottime": 0.0034237288135593224,
+                                                      "children": [
+                                                        {
+                                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                                          "value": 2,
+                                                          "diff": 2,
+                                                          "timeshare": 2,
+                                                          "tottime": 0.0034237288135593224,
+                                                          "children": [
+                                                            {
+                                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                                              "value": 1,
+                                                              "diff": 1,
+                                                              "timeshare": 1,
+                                                              "tottime": 0.0017118644067796612,
+                                                              "children": [
+                                                                {
+                                                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                                                  "value": 1,
+                                                                  "diff": 1,
+                                                                  "timeshare": 1,
+                                                                  "tottime": 0.0017118644067796612,
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                                                      "value": 1,
+                                                                      "diff": 1,
+                                                                      "timeshare": 1,
+                                                                      "tottime": 0.0017118644067796612,
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                                                          "value": 1,
+                                                                          "diff": 1,
+                                                                          "timeshare": 1,
+                                                                          "tottime": 0.0017118644067796612,
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                                                              "value": 1,
+                                                                              "diff": 1,
+                                                                              "timeshare": 1,
+                                                                              "tottime": 0.0017118644067796612,
+                                                                              "children": [
+                                                                                {
+                                                                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                  "value": 1,
+                                                                                  "diff": 1,
+                                                                                  "timeshare": 1,
+                                                                                  "tottime": 0.0017118644067796612,
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                      "value": 1,
+                                                                                      "diff": 1,
+                                                                                      "timeshare": 1,
+                                                                                      "tottime": 0.0017118644067796612,
+                                                                                      "children": [
+                                                                                        {
+                                                                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                          "value": 1,
+                                                                                          "diff": 1,
+                                                                                          "timeshare": 1,
+                                                                                          "tottime": 0.0017118644067796612,
+                                                                                          "children": [
+                                                                                            {
+                                                                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                              "value": 1,
+                                                                                              "diff": 1,
+                                                                                              "timeshare": 1,
+                                                                                              "tottime": 0.0017118644067796612,
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                  "value": 1,
+                                                                                                  "diff": 1,
+                                                                                                  "timeshare": 1,
+                                                                                                  "tottime": 0.0017118644067796612,
+                                                                                                  "children": [
+                                                                                                    {
+                                                                                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                      "value": 1,
+                                                                                                      "diff": 1,
+                                                                                                      "timeshare": 1,
+                                                                                                      "tottime": 0.0017118644067796612,
+                                                                                                      "children": [
+                                                                                                        {
+                                                                                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                          "value": 1,
+                                                                                                          "diff": 1,
+                                                                                                          "timeshare": 1,
+                                                                                                          "tottime": 0.0017118644067796612,
+                                                                                                          "children": [
+                                                                                                            {
+                                                                                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                              "value": 1,
+                                                                                                              "diff": 1,
+                                                                                                              "timeshare": 1,
+                                                                                                              "tottime": 0.0017118644067796612,
+                                                                                                              "children": [
+                                                                                                                {
+                                                                                                                  "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                                  "value": 1,
+                                                                                                                  "diff": 1,
+                                                                                                                  "timeshare": 1,
+                                                                                                                  "tottime": 0.0017118644067796612,
+                                                                                                                  "children": [
+                                                                                                                    {
+                                                                                                                      "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                                      "value": 1,
+                                                                                                                      "diff": 1,
+                                                                                                                      "timeshare": 1,
+                                                                                                                      "tottime": 0.0017118644067796612,
+                                                                                                                      "children": [
+                                                                                                                        {
+                                                                                                                          "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                                          "value": 1,
+                                                                                                                          "diff": 1,
+                                                                                                                          "timeshare": 1,
+                                                                                                                          "tottime": 0.0017118644067796612,
+                                                                                                                          "children": [
+                                                                                                                            {
+                                                                                                                              "name": "fibonacci_improved.py:fib_seq:31",
+                                                                                                                              "value": 1,
+                                                                                                                              "diff": 1,
+                                                                                                                              "timeshare": 1,
+                                                                                                                              "tottime": 0.0017118644067796612,
+                                                                                                                              "children": [
+                                                                                                                                {
+                                                                                                                                  "name": "fibonacci_improved.py:fib_seq:32",
+                                                                                                                                  "value": 1,
+                                                                                                                                  "diff": 1,
+                                                                                                                                  "timeshare": 1,
+                                                                                                                                  "tottime": 0.0017118644067796612,
+                                                                                                                                  "children": [
+                                                                                                                                    {
+                                                                                                                                      "name": "fibonacci_improved.py:__call__:16",
+                                                                                                                                      "value": 1,
+                                                                                                                                      "diff": 1,
+                                                                                                                                      "timeshare": 1,
+                                                                                                                                      "tottime": 0.0017118644067796612
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "name": "fibonacci_improved.py:fib_seq:32",
+                                                              "value": 1,
+                                                              "diff": 1,
+                                                              "timeshare": 1,
+                                                              "tottime": 0.0017118644067796612,
+                                                              "children": [
+                                                                {
+                                                                  "name": "fibonacci_improved.py:__call__:15",
+                                                                  "value": 1,
+                                                                  "diff": 1,
+                                                                  "timeshare": 1,
+                                                                  "tottime": 0.0017118644067796612,
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "fibonacci_improved.py:fib:26",
+                                                                      "value": 1,
+                                                                      "diff": 1,
+                                                                      "timeshare": 1,
+                                                                      "tottime": 0.0017118644067796612
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/usr/lib/python2.7/encodings/__init__.py:search_function:100",
+      "value": 1,
+      "diff": 1,
+      "timeshare": 1,
+      "tottime": 0.0017118644067796612,
+      "children": [
+        {
+          "name": "/usr/lib/python2.7/encodings/utf_8.py:<module>:18",
+          "value": 1,
+          "diff": 1,
+          "timeshare": 1,
+          "tottime": 0.0017118644067796612,
+          "children": [
+            {
+              "name": "/usr/lib/python2.7/encodings/utf_8.py:IncrementalEncoder:18",
+              "value": 1,
+              "diff": 1,
+              "timeshare": 1,
+              "tottime": 0.0017118644067796612
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "/usr/lib/python2.7/site.py:<module>:380",
+      "value": 1,
+      "diff": 0,
+      "timeshare": 1,
+      "tottime": 0.0017118644067796612
+    }
+  ]
+}
