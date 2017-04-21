@@ -59,12 +59,6 @@
     </style>
 
     <title>d3-flame-graph</title>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="container">
@@ -110,8 +104,6 @@
       .transitionDuration(750)
       .transitionEase('cubic-in-out')
       .sort(true)
-      //Example to sort in reverse order
-      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
       .title("Baseline Profile (blue means fewer calls after the change)")
       .onClick(onClick);
 
@@ -122,8 +114,6 @@
       .transitionDuration(750)
       .transitionEase('cubic-in-out')
       .sort(true)
-      //Example to sort in reverse order
-      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
       .title("New Profile (blue means fewer calls after the change)")
       .onClick(onClick);
 
@@ -134,29 +124,11 @@
       .transitionDuration(750)
       .transitionEase('cubic-in-out')
       .sort(true)
-      //Example to sort in reverse order
-      //.sort(function(a,b){ return d3.descending(a.name, b.name);})
       .title("Profile Delta (blue means reduction in time spent)")
       .onClick(onClick);
 
 
-    // Example on how to use custom tooltips using d3-tip.
-    //var tip = d3.tip()
-    //  .direction("s")
-    //  .offset([8, 0])
-    //  .attr('class', 'd3-flame-graph-tip')
-    //  .html(function(d) { return "name: " + d.name + ", value: " + d.value; });
-
-    //flameGraph.tooltip(tip);
-
-    // Example on how to use custom labels
-    // var label = function(d) {
-    //  return "name: " + d.name + ", value: " + d.value;
-    // }
-
-    // flameGraph.label(label);
     var labelFormat = function(d) {
-      //return d.name + " (" + d3.round(100 * d.dx, 3) + "%, " + d.value + " samples)";
       return d.name + " (" + d3.round(100 * d.dx, 3) + "%, " + d.value + " samples, " + d.tottime + " time)";
     };
 
