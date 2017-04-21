@@ -68,7 +68,7 @@ FlameGraph/difffolded.pl -u edav_final_project/example/data/baseline_diff.folded
 
 ```bash
 node-stack-convert/index.js -f edav_final_project/example/data/baseline_diff.folded > edav_final_project/example/data/baseline_diff.json
-node-stack-convert/index.js -f edav_final_project/example/data/improved_diff.folded > edav_final_project/example/data/improved_diff.json
+node-stack-convert/index.js -n -f edav_final_project/example/data/improved_diff.folded > edav_final_project/example/data/improved_diff.json
 node-stack-convert/index.js -f edav_final_project/example/data/delta_diff.folded > edav_final_project/example/data/delta_diff.json
 ```
 
