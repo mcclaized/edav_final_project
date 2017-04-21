@@ -80,3 +80,4 @@ Drag and drop `edav_final_project/example/index.html` into **Firefox** (note: ot
 http://queue.acm.org/detail.cfm?id=2927301
 http://www.brendangregg.com/blog/2014-11-09/differential-flame-graphs.html
 https://github.com/corpaul/flamegraphdiff
+`index.html` modeled after https://github.com/spiermar/d3-flame-graph/blob/master/example/index.html
