@@ -6,6 +6,22 @@ You can skip all of the **Setup** and **Usage** if you just want to see the pict
 
 *Note: other browsers may not work due to restrictions in the `d3.json()` call referencing the filesystem instead of HTTP*
 
+## Addendum to the Main Analysis section
+
+I realized that there was one key point that I did not make in the **Main Analysis** section of my write up that I think is important. It's easiest to follow along if you have the `fibonacci` example visualization open in your browser or are looking at the screenshots in the **Appendix**.
+
+Take a look at the FlameGraph titled "New Profile", and imagine that you are a developer who recently made the code changes that resulted in this image. Without having either of the other two profiles available for context, what would you think? In my opinion, it's very hard to see whether the code was improved or regressed. 
+
+A regular FlameGraph (like http://queue.acm.org/downloads/2016/Gregg4.svg) chooses a warm color palette for each rectangle at random, so the color only serves to differentiate the different function calls. In "New Profile", the colors represent the number of function calls relative to the "Baseline" profile (more calls in New Profile relative to Baseline --> Red, fewer calls in New Profile --> Blue), but even this isn't very helpful in this case: there seems to be an even mix of blue and red and what's even more alarming is that the parts that are most red are the ones that contain calls to our `fibonacci_improved.py` source code!
+
+If we can take a step back and look at the other two graphs it becomes immediately clear that we made a huge improvement: we dramatically reduced the total number of calls. The reason we couldn't see this in the "New Profile" is that the rectangles are determined only by the calls made in the *improved* program, so it has no way of showing what was removed.
+
+Clearly, the "Baseline" and "New Profile" together show two halves of the whole, but I'd also like to point out the "Profile Delta". In this example, you probably don't need the "Profile Delta" because the differences between Baseline and New are so stark. But in cases where you are profiling a large codebase and only making small changes, it is reasonable to assume that Baseline and New Profile would look largely the same.
+
+See the two Pull Requests mentioned below for details on how I implemented this "timeshare" feature.
+
+End of Addendum, thanks for reading!
+
 ## Setup instructions
 
 ### Clone this repository
@@ -15,7 +31,7 @@ git clone https://github.com/mcclaized/edav_final_project.git
 ```
 
 ### Clone my FlameGraph fork
-
+(see https://github.com/mcclaized/FlameGraph/pull/1 for details on what I changed)
 ```bash
 git clone https://github.com/mcclaized/FlameGraph.git
 cd FlameGraph
@@ -23,7 +39,8 @@ git checkout diff_two_flamegraphs
 cd ..
 ```
 
-### Clone my node-stack-convert fork
+### Clone my node-stack-convert fork 
+(see https://github.com/mcclaized/node-stack-convert/pull/1 for details on what I changed)
 
 ```bash
 git clone https://github.com/mcclaized/node-stack-convert.git
