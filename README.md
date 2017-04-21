@@ -77,7 +77,7 @@ node-stack-convert/index.js -f edav_final_project/example/data/delta_diff.folded
 Drag and drop `edav_final_project/example/index.html` into **Firefox** (note: other browsers may not work due to restrictions in the `d3.json()` call coming from the filesystem)
 
 ## Links / Attribution
-http://queue.acm.org/detail.cfm?id=2927301
-http://www.brendangregg.com/blog/2014-11-09/differential-flame-graphs.html
-https://github.com/corpaul/flamegraphdiff
-`index.html` modeled after https://github.com/spiermar/d3-flame-graph/blob/master/example/index.html
+- http://queue.acm.org/detail.cfm?id=2927301
+- http://www.brendangregg.com/blog/2014-11-09/differential-flame-graphs.html
+- https://github.com/corpaul/flamegraphdiff
+- `index.html` modeled after https://github.com/spiermar/d3-flame-graph/blob/master/example/index.html
